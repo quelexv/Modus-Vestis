@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrendStore — Корзина</title>
+  <link rel="icon" href="img/bazardomov_logo.webp" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>Modus Vestis</span>
+      </div>
+
+            <!-- Кнопка Гамбургер-->
+      <button class="hamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html" class="active">Корзина <span id="cart-count">(0)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 40px 16px; flex: 1;">
+    <h1 style="margin-bottom: 30px;">Ваша корзина</h1>
+    
+    <div id="cart-container">
+    </div>
+  </main>
+  
+  <div class="toast-container" id="toast-container"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Modus Vestis.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

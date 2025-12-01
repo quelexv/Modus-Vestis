@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrendStore — Стильная одежда</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>Modus Vestis</span>
+      </div>
+      
+      <!-- Кнопка Гамбургер -->
+      <button class="hamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html">Корзина <span id="cart-count">(0)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Твой стиль — твои правила</h1>
+        <p>Новая коллекция Весна-Лето 2025 уже в продаже. Премиальные ткани и идеальный крой.</p>
+        <a class="btn btn-primary" href="catalog.html">Смотреть новинки</a>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <h2>Почему нас выбирают</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon">🧵</span>
+          <h3>Качество</h3>
+          <p>Натуральные ткани и фурнитура от лучших производителей Европы.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🚚</span>
+          <h3>Доставка</h3>
+          <p>Бесплатная доставка при заказе от 25 000 ₸ с примеркой.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">↺</span>
+          <h3>Возврат</h3>
+          <p>Не подошел размер? Верните товар в течение 14 дней без вопросов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview container">
+      <h2>Хиты продаж</h2>
+      <div class="grid-catalog" style="grid-template-columns: repeat(4, 1fr);">
+        
+        <article class="card">
+          <img src="img/belaya-futbolka.webp" alt="белая футболка">
+          <div class="card-body">
+            <h3>Белая футболка Oversize</h3>
+            <p class="price">8 500 ₸</p>
+            <a class="btn btn-secondary" href="catalog.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/jeans-kurtka.webp" alt="Джинсовая куртка">
+          <div class="card-body">
+            <h3>Джинсовая куртка Vintage</h3>
+            <p class="price">24 000 ₸</p>
+            <a class="btn btn-secondary" href="catalog.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/trench.webp" alt="Плащ">
+          <div class="card-body">
+            <h3>Бежевый тренч</h3>
+            <p class="price">45 000 ₸</p>
+            <a class="btn btn-secondary" href="catalog.html">Подробнее</a>
+          </div>
+        </article>
+        
+        <article class="card">
+            <img src="img/krossovki.webp" alt="Кроссовки">
+            <div class="card-body">
+              <h3>Кроссовки Urban Run</h3>
+              <p class="price">32 000 ₸</p>
+              <a class="btn btn-secondary" href="catalog.html">Подробнее</a>
+            </div>
+          </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Modus Vestis. Стильная одежда.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

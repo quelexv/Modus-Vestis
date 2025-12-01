@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrendStore — Контакты</title>
+  <link rel="icon" href="img/bazardomov_logo.webp" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>Modus Vestis</span>
+      </div>
+
+            <!-- Кнопка Гамбургер-->
+      <button class="hamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html" class="active">Контакты</a>
+        <a href="cart.html">Корзина <span id="cart-count">(0)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contacts-page">
+    <h1 style="margin-bottom: 20px;">Наши контакты</h1>
+    
+    <!-- Адрес и Карта -->
+    <div style="margin-bottom: 30px;">
+        <p style="margin-bottom: 10px; font-weight: 600;">г. Алматы, ул. Абая, 10</p>
+        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #e5e7eb;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.7766346294363!2d76.94528131544525!3d43.24523397913735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ecad5d2639d%3A0x6d90d8a570077884!2z0L_RgNC-0YHQvy4g0JDQsdCw0Y8gMTAsINCQ0LvQvLQs0YLRiyAwNTAwMTAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2skz!4v1689600000000!5m2!1sru!2skz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <h1>Напишите нам</h1>
+    <p>Есть вопросы по размеру или доставке? Заполните форму, и менеджер свяжется с вами.</p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Сообщение отправлено!');">
+      <label>
+        Имя
+        <input type="text" name="name" required placeholder="Как к вам обращаться">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="contact" required placeholder="email@domain.com">
+      </label>
+
+      <label>
+        Сообщение
+        <textarea name="message" rows="5" required placeholder="Например: Помогите подобрать размер на рост 175..."></textarea>
+      </label>
+
+      <button class="btn btn-primary" type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Modus Vestis.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
